@@ -1,0 +1,154 @@
+:root {
+    --main-color: #4B4E6D;
+    --secondary-color: #92D8A9;
+    --contrast-color: #F3F3F3;
+    --light-color: #BECEC5;
+    --dark-color: #222222;
+}
+
+body {
+    background-color: var(--secondary-color);
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    padding: 1vw 1vw 0vh 1vw;
+}
+
+hr {
+    background-color: yellow;
+}
+
+header {
+    background-color: var(--main-color);
+    margin: 2px;
+    width: 100%;
+}
+
+header>h1 {
+    color: var(--contrast-color);
+    text-align: center;
+    padding: 15px;
+    margin: 0px;
+}
+
+#linia {
+    width: 100%;
+}
+
+#linia>hr {
+    border-color: #222222;
+    margin: 15px 30px 15px 30px;
+}
+
+#main-wrapper {
+    display: flex;
+    height: 100vh;
+    width: 100%;
+}
+
+article {
+    background-color: var(--main-color);
+    width: 69vw;
+    padding: 2vw;
+    overflow-y: scroll;
+}
+
+article>section {
+    margin-bottom: 3vh;
+}
+
+article>section>h2 {
+    color: var(--contrast-color);
+}
+
+article>section>p {
+    color: var(--light-color);
+    text-align: left;
+}
+
+
+aside {
+    background-color: aliceblue;
+    width: 31vw;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    padding: 1vw;
+}
+
+#mail {
+    margin-bottom: 3vh;
+    height: 3vh;
+
+}
+
+#plec {
+    border-radius: 5px 5px 0 0;
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    background-color: var(--main-color);
+    margin-top: 1vh;
+}
+
+#c1 {
+    font-size: 1.2em;
+
+}
+
+#plec>p {
+    font-size: 1.1vw;
+    color: var(--contrast-color);
+}
+
+#checkbot {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--dark-color);
+    padding: 1.5vw;
+    color: var(--contrast-color);
+    font-size: 1vw;
+    font-weight: 500;
+}
+
+#wyslij {
+    background-color: var(--main-color);
+    color: var(--contrast-color);
+    margin-top: 2vh;
+    height: 4vh;
+}
+
+nav {
+    margin-bottom: 0px;
+    display: flex;
+    justify-content: space-around;
+    height: 8vh;
+}
+
+nav>a {
+    background-color: var(--main-color);
+    color: var(--contrast-color);
+    width: calc(100%/4);
+    text-align: center;
+    height: 8vh;
+    text-decoration: none;
+    font-size: 1.2em;
+}
+
+footer {
+    background-color: var(--dark-color);
+    color: var(--contrast-color);
+    width: 100%;
+    position: sticky;
+    bottom: 0;
+    left: 50%;
+}
+
+footer>h5 {
+    margin-left: 2vw;
+}
